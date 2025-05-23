@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form for Etche Skilled Workers</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a252f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .logo p {
+      margin: 0;
+      font-size: 14px;
+      color: #1e90ff;
+    }
+
+    .etche { color: blue; }
+    .skilled { color: white; }
+    .worker { color: blue; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 130px 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #1a252f;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #1e90ff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #0d74d1;
+    }
+
+    footer {
+      background-color: #1a252f;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-contact p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact i {
+      margin-right: 8px;
+      color: #1e90ff;
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+     /* Mobile Nav Styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1a252f;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h1>
+      <p>Telent Solutions</p>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="apply.html">Apply For Skill</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  </header>
+
+  <!-- Registration Form -->
+  <main>
+    <h1>Registration Form for Etche Skilled Workers</h1>
+
+    <h2>Section A: Personal Information</h2>
+    <form action="https://formsubmit.co/egbulechidiadi@gmail.com" method="POST">
+      <label for="fullname">Fullname</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="state">State of Origin</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="lga">Local Government Area</label>
+      <input type="text" id="lga" name="lga" required>
+
+      <label for="address">Permanent Home Address</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <h2>Section B: Skills Experience</h2>
+
+      <label for="experience">Skill Experience (if any)</label>
+      <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience..."></textarea>
+
+      <h2>Section C: Type of Training</h2>
+
+      <label for="skill">What type of skills are you applying for?</label>
+      <select id="skill" name="skill" required>
+        <option value="">Select a skill</option>
+        <option>Computer Literacy</option>
+        <option>Fashion Design</option>
+        <option>Auto Mechanic</option>
+        <option>Hairdressing</option>
+        <option>Catering</option>
+        <option>Welding</option>
+        <option>Agriculture</option>
+        <option>Event Decoration</option>
+        <option>GSM Repairs</option>
+        <option>Photography</option>
+        <option>Tailoring</option>
+        <option>Plumbing</option>
+        <option>Electrician</option>
+        <option>Event Planning</option>
+        <option>Solar Installation</option>
+      </select>
+
+      <label for="status">Current Employment Status</label>
+      <select id="status" name="status" required>
+        <option value="">Select status</option>
+        <option>Employed</option>
+        <option>Unemployed</option>
+        <option>Self Employed</option>
+        <option>Student</option>
+      </select>
+
+      <h2>Section D: Referees Information</h2>
+
+      <label for="refname">Fullname</label>
+      <input type="text" id="refname" name="refname" required>
+
+      <label for="refphone">Phone Number</label>
+      <input type="tel" id="refphone" name="refphone" required>
+
+      <label for="refaddress">Address</label>
+      <input type="text" id="refaddress" name="refaddress" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-section">
+      <h3><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h3>
+      <p>Telent Solutions</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="apply.html">Apply</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone-alt"></i> 08149568449</p>
+      <p><i class="fas fa-envelope"></i> Etcheskilledworker@gmail.com</p>
+    </div>
+  </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('active');
+  }
+</script>
+</body>
+</html>

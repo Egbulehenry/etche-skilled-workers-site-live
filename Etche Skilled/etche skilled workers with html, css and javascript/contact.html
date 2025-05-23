@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Etche Skilled Worker</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1a252f;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo h1 { font-size: 24px; }
+    .logo p { font-size: 14px; color: #1e90ff; }
+    .etche { color: blue; }
+    .skilled { color: white; }
+    .worker { color: blue; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+     /* Mobile Nav Styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1a252f;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+    main {
+      padding: 120px 20px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #1a252f;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 300px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+      color: #1a252f;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #1e90ff;
+    }
+
+    .contact-form input, .contact-form select, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #006ad1;
+    }
+
+    footer {
+      background-color: #1a252f;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer-section a:hover { text-decoration: underline; }
+
+    .footer-contact p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact i {
+      margin-right: 8px;
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h1>
+      <p>Telent Solutions</p>
+    </div>
+   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="apply.html">Apply For Skill</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  </header>
+
+  <main>
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Etche-Omuma, Road</p>
+        <p><i class="fas fa-phone-alt"></i> (234) 8149568449</p>
+        <p><i class="fas fa-envelope"></i> info@etcheskilledWorker@gamil.com</p>
+        <p><i class="fas fa-clock"></i> Mon–Fri: 8:00 AM – 6:00 PM</p>
+        <p><i class="fas fa-clock"></i> Sat: 9:00 AM – 2:00 PM</p>
+        <p><i class="fas fa-exclamation-triangle"></i> For emergency services after hours, call our 24/7 hotline: (234) 8149568449</p>
+      </div>
+      <div class="contact-form">
+        <form action="https://formsubmit.co/egbulechidiadi@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone" required>
+          <select name="service" required>
+            <option value="">Select Service</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Tailoring">Tailoring</option>
+            <option value="Electrician">Electrician</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Describe your project needs..." required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-section">
+      <h3><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h3>
+      <p>Telent Solutions</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="apply.html">Apply</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone-alt"></i> 08149568449</p>
+      <p><i class="fas fa-envelope"></i> Etcheskilledworker@gmail.com</p>
+    </div>
+  </footer>
+
+  </footer>
+  <script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('active');
+  }
+</script>
+</body>
+</html>

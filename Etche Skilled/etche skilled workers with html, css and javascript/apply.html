@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply - Etche Skilled Worker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+      padding-top: 70px;
+    }
+
+   header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a252f;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+    .logo h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .logo p {
+      margin: 0;
+      font-size: 14px;
+      color: #1e90ff;
+    }
+
+    .etche { color: blue; }
+    .skilled { color: white; }
+    .worker { color: blue; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+      /* Mobile Nav Styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1a252f;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .program {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.3s;
+    }
+
+    .program:hover {
+      transform: scale(1.03);
+      border-color: #1e90ff;
+    }
+
+    .program img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .program-name {
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1a252f;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-contact p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact i {
+      margin-right: 8px;
+      color: #1e90ff;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="logo">
+    <h1><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h1>
+    <p>Telent Solutions</p>
+  </div>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="apply.html">Apply For Skill</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+  <!-- Skill Programs Grid -->
+  <div class="grid-container">
+    <a class="program" href="register.html">
+      <img src="computer.jpg" alt="Computer Literacy">
+      <div class="program-name">Computer Literacy</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="sewing.jpg" alt="Fashion Design">
+      <div class="program-name">Fashion Design</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Auto Mechanic.jpg" alt="Auto Mechanic">
+      <div class="program-name">Auto Mechanic</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Hairdressing.jpg" alt="Hairdressing">
+      <div class="program-name">Hairdressing</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Catering class.jpg" alt="Catering">
+      <div class="program-name">Catering</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Welding.jpg" alt="Welding">
+      <div class="program-name">Welding</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Agriculture.jpg" alt="Agriculture">
+      <div class="program-name">Agriculture</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/decoration.jpg" alt="Event Decoration">
+      <div class="program-name">Event Decoration</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/GSM Repairs.jpg" alt="GSM Repairs">
+      <div class="program-name">GSM Repairs</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Photography.jpg" alt="Photography">
+      <div class="program-name">Photography</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/tailor.jpg" alt="Tailoring">
+      <div class="program-name">Tailoring</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Plumbing.jpg" alt="Plumbing">
+      <div class="program-name">Plumbing</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Electrician.jpg" alt="Electrician">
+      <div class="program-name">Electrician</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Event Planning.jpg" alt="Event Planning">
+      <div class="program-name">Event Planning</div>
+    </a>
+    <a class="program" href="register.html">
+      <img src="images/Solar Installation.jpg" alt="Solar Installation">
+      <div class="program-name">Solar Installation</div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h3><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h3>
+      <p>Telent Solutions</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="apply.html">Apply</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone-alt"></i> 08149568449</p>
+      <p><i class="fas fa-envelope"></i> Etcheskilledworker@gmail.com</p>
+    </div>
+  </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('active');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latest Etche News</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1a252f;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo h1 { font-size: 24px; }
+    .logo p { font-size: 14px; color: #1e90ff; }
+
+    .etche { color: blue; }
+    .skilled { color: white; }
+    .worker { color: blue; }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .intro {
+      text-align: center;
+      margin-top: 120px;
+      margin-bottom: 30px;
+    }
+
+    .intro h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #1a252f;
+    }
+
+    .intro p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .news-container {
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .news-item {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .news-item h2 {
+      color: #1a252f;
+      margin-bottom: 10px;
+    }
+
+    .news-item p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .news-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    footer {
+      background-color: #1a252f;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 30px 20px;
+    }
+
+    .footer-section {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .footer-section a:hover { text-decoration: underline; }
+
+    .footer-contact p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact i {
+      margin-right: 8px;
+      color: #1e90ff;
+    }
+
+    @media (max-width: 768px) {
+      footer { flex-direction: column; align-items: center; text-align: center; }
+    }
+
+      /* Mobile Nav Styles */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1a252f;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h1>
+      <p>Telent Solutions</p>
+    </div>
+ <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <nav id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="apply.html">Apply For Skill</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Latest Etche News</h1>
+    <p>Stay updated with current developments from Etche community</p>
+  </section>
+
+  <div class="news-container">
+    <div class="news-item">
+      <h2>New Training Centers Opened in Etche</h2>
+      <img src="images/center.jpg" alt="Training center opening">
+      <p>
+        The Etche local government has inaugurated a new vocational center to provide hands-on training to youth in various trades...
+      </p>
+      <p>The government in partnership with Telent Solutions has opened three new training centers in remote areas of Etche to make the program more accessible.</p>
+    </div>
+
+    <div class="news-item">
+      <h2>Partnership with International Agencies</h2>
+      <img src="images/computer.jpg" alt="Partnership meeting">
+      <p>Etche Skilled Worker program has entered discussions with international agencies for technical support and possible scholarships for top-performing trainees.</p>
+    </div>
+
+    <div class="news-item">
+      <h2>Community Outreach and Mobilization</h2>
+      <img src="images/outreach.jpg" alt="Community outreach">
+      <p>Mobilization efforts are ongoing to sensitize more youths in Etche on the benefits and opportunities offered by the program, especially in rural areas.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-section">
+      <h3><span class="etche">Etche</span> <span class="skilled">Skilled</span> <span class="worker">Workers</span></h3>
+      <p>Telent Solutions</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="apply.html">Apply</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-section footer-contact">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone-alt"></i> 08149568449</p>
+      <p><i class="fas fa-envelope"></i> Etcheskilledworker@gmail.com</p>
+    </div>
+  </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
+
